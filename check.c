@@ -35,11 +35,6 @@ int check_map(int fd, t_main *data)
 		{
 			if((line[i] < 47 || line[i] > 54) && line[i] != '8')
 				return(-1);
-//			if ((i == 0 || data->number_of_y == -1) && line[i] == '0')
-//			{
-//				write(1, "Wrong map outline\n", 18);
-//				return(-1);
-//			}
 			if (line[i] == '8')
 			{
 				if (data->player_x == -1){
